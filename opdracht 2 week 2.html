@@ -1,0 +1,27 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>berekenBMI</title>
+	</head>
+<body>
+	<input type="button" value="Wat is uw BMI" onclick="berekenBMI()">
+	<script>
+	var berekenBMI = function(){
+		var	massa = prompt("massa in KG");
+		var	lengte = prompt("lengte in CM");
+		var antwoord = massa / (lengte * lengte);
+
+		parseFloat(massa);
+		parseFloat(lengte) / 100;
+
+			if(antwoord > 25){
+			alert("u heeft overgewicht")
+			}
+			else{
+			alert("u bent gezond")
+		
+			}
+	}	
+	</script>
+</body>
+</html>

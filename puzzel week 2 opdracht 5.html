@@ -1,0 +1,36 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Reken uw euro's om</title>
+		
+	</head>
+	<body>
+		<form>
+
+		<label for="invoer">Euro omrekenen</label>
+		<input type="number" id="invoer" name="invoer" placeholder="vul een bedrag in">
+		<input type="button" value="Omrekenen" onclick="omrekenen()"/>
+		</form>
+			<p id="geld1"> </p>
+			<p id="geld2"> </p>
+			<p id="geld3"> </p>
+			<p id="geld4"> </p>
+	<script>
+	var omrekenen = function(){
+		var invoer = document.getElementById("invoer").value;
+			var dollar = parseFloat(invoer) * 1.08 
+			var Peso = parseFloat(invoer) * 18.06
+			var Yen = parseFloat(invoer) * 132.04 
+			var Pond = parseFloat(invoer) * 0.71
+
+				document.getElementById("geld1").innerHTML = +invoer+" euro is omgerekend " + dollar + " Amerikaanse dollars"
+				document.getElementById("geld2").innerHTML = +invoer+" euro is omgerekend " + Peso + " Mexicaanse peso"
+				document.getElementById("geld3").innerHTML = +invoer+" euro is omgerekend " + Yen + " Japanse yen"
+				document.getElementById("geld4").innerHTML = +invoer+" euro is omgerekend " + Pond + " Britse pond"
+	}
+		
+
+	</script>
+
+</body>
+</html>

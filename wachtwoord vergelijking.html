@@ -1,0 +1,26 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>wachtwoord herkenning</title>
+	</head>
+<body>
+	<form>
+		<label for="invoer">Wachtwoord</label>
+		<input type="text" id="wachtwoord" name="invoer" placeholder="vul uw wachtwoord in">
+		<input type="button" value="Login" onclick="vergelijkWachtwoord()">
+	</form>
+	
+	<script>
+	var wachtwoord = 0000;	
+		var vergelijkWachtwoord = function(){
+		var invoer = document.getElementById("invoer");
+	if(invoer === wachtwoord) {
+		alert("Welkom");
+	}
+	else{
+		alert("Verkeerd wachtwoord");
+	}
+
+	</script>
+</body>
+</html>

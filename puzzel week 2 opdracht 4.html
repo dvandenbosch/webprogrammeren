@@ -1,0 +1,22 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Welk woord is het langst?</title>
+		
+	</head>
+	<body>
+	<p id="antwoord"> </p>
+	<script>
+	var woord1 = prompt("wat is het eerste woord?")
+	var woord2 = prompt("wat is het tweede woord?")
+
+		if (woord1.length > woord2.length) {
+			document.getElementById("antwoord").innerHTML = "het eerste woord is het langst"
+		}
+		else{	
+			document.getElementById("antwoord").innerHTML = "het tweede woord is het langst"
+		}
+	</script>
+
+</body>
+</html>
